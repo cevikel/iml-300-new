@@ -1,14 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Links Example</title>
-  </head>
-  <body>
-    Go  to <a href="page-4.html">page 4</a>.
-    <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/N609loYkFJo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>ASTRAL PLANE</title>
+
+
+
+</head>
+
+<style>
+    a:link {
+        color: paleturquoise;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    .section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+        .section p {
+        text-align: center;
+        font-size: 19px;
+        font-family: cursive;
+        padding: 20px;
+        margin: 15px;
+        z-index: 1;
+        opacity: 0.8;
+    }
+    
+    
+      .section h1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: bold;
+        padding: 20px;
+        margin: 15px;
+        z-index: 1;
+        opacity: 0.8;
+    }
+    
+ 
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .color-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.09;
+    }
+
+
+    video {
+
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        background-size: cover;
+    }
+
+
+
+
+</style>
+
+<body>
+
+    <div class="section">
+
+        <p><span style="color:white"><br><br>
+            While in that semi-unconscious state, you decide to set your intentions in having a safe out-of-body experience, leaving your physical self behind through astral projection. The possibilities are endless, you can travel through time, space, and even dimensions. Where will you go, and what will you experience? Your choices are: <br>   <br><a href="page-4.html"> BIRTH </a>, <a href="page-5.html"> DEATH </a>, <a href="page-6.html"> EARTH </a>,<a href="page-7.html"> SPACE </a>.
+        
+              
+                
+            </span>
       
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DXUAyRRkI6k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
-     
-  </body>
+  </p>
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="circle.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
 </html>

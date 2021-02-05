@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>WAKE UP</title>
+
+
+
+</head>
+
+<style>
+    a:link {
+        color: paleturquoise;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    .section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .section h2 {
+        text-align: center;
+        font-size: 30px;
+        font-family: cursive bold;
+        padding: 20px;
+        margin: 15px;
+        z-index: 5;
+    }
+
+    .section p {
+        text-align: center;
+        font-size: 19px;
+        font-family: cursive;
+        padding: 20px;
+        margin: 15px;
+        z-index: 1;
+        opacity: 0.8;
+    }
+    
+
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .color-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.09;
+    }
+
+
+    video {
+
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        background-size: cover;
+    }
+
+
+
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+</style>
+
+<body>
+
+    <div class="section">
+
+        <p><span style="color:white"><br><br>
+            AWAKE
+OR 
+              
+                   <a href="index.html">GO BACK</a>
+            </span>
+      
+  </p>
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="space.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <h2> </h2>
+
+
+
+
+<!--
+
+  <audio controls autoplay>
+        <source src="asset/rain_start.mp3" type="audio/mp3">
+    </audio> 
+
+ --> 
+
+
+</body>
+
+</html>
