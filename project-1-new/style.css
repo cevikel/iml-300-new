@@ -1,0 +1,17 @@
+
+
+    #mydiv {
+        position: absolute;
+    }
+
+    @font-face {
+        font-family: "Pilowlava";
+        src: url("../fonts/Pilowlava-Regular.otf") format("otf"),
+    }
+
+    h1 {
+        font-family: Pilowlava;
+      text-decoration: line-through;
+
+    }
+    }
