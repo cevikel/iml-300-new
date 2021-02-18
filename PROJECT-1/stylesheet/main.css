@@ -65,17 +65,9 @@ a:hover {
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Elianto-Regular';
-    src: url("fonts/Elianto-Regular.ttf") format("opentype");
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Generica';
-    src: url("fonts/Generica.otf") format("opentype");
-    font-style: normal;
-}
+
+
 
 
 /*colors*/
@@ -198,12 +190,13 @@ a:hover {
 
 
 .middle {
-    margin: auto;
-    width: 15%;
-    /*    border: solid 3px white;*/
-    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
     top: 49vh;
-    left: 79vh;
+
 }
 
 
@@ -327,6 +320,10 @@ a:hover {
     margin-top: 3vh;
 }
 
+.z {
+    z-index: 4;
+
+}
 
 
 .circle {
