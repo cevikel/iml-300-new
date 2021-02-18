@@ -33,7 +33,7 @@ h2 {
 
 p {
     color: white;
-    font-family: Generica;
+    font-family: Elianto;
     font-size: 1.75rem;
     text-align: center;
     position: fixed;
@@ -61,10 +61,19 @@ a:hover {
 
 @font-face {
     font-family: 'Pillowlava-Regular';
-    src: url("fonts/Pillowlava-Regular.otf") format("opentype");
+    src: url("fonts/Pillowlava-Regular.woff2") format("woff2");
+    src: url("fonts/Pillowlava-Regular.woff") format("woff");
+    font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Elianto';
+    src: url('Elianto-Regular.woff2') format('woff2'),
+        url('Elianto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
