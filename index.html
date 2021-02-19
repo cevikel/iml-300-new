@@ -2,47 +2,89 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Ayse's Homepage</title> <!--Update with your name-->
+    <title>Human Studies</title>
+
+    <link rel="stylesheet" href="stylesheet/main.css">
 </head>
 
-<body>
-    <div>
-        <h1>Ayse Cevikel</h1> <!--Update with your name-->
-        <p>This is my website for <i>IML300 class</i>. A little bit about me.</p>
-    </div>   
+<style>
+    #mydiv {
+        position: absolute;
+        z-index: 3;
+        margin: auto;
+        box-shadow: 0 0 140px black;
+        left: 10vh;
+        top: 75vh;
+    }
+</style>
 
-    <div>
-        <h1>Presentation</h1>
-        <a href="">Pecha Kucha: Lorem Ipsum</a>
+
+<body class="bg-main">
+
+
+
+    <div class="folder">
+
+
+        <a href="projects.html"> <img src="assets/projects.png"> </a>
+
+        <a href="thoughts.html"> <img src="assets/thoughts.png"></a>
+        <a href="presentation.html"> <img src="assets/presentation.png"></a> <a href="exercises.html"> <img src="assets/exercises.png"></a>
+
+
     </div>
 
-    <div>
-        <h1>Projects</h1>
-        <h2>Project 1: HyperNarrative</h2>
-        <a href="PROJECT-1/index.html">Final: Enter The Artverse</a>
-        <h2>Project 2: Algorithmic Pattern and Sound</h2>
-        <a href="">Final: Lorem Ipsum</a>
-        <h2>Project 3: Networked Justice</h2>
-        <a href="">Final: Lorem Ipsum</a>
+    <div id="mydiv">
+
+
+        <img src="assets/ayse.png" width="300px">
+
+
     </div>
 
-    <div>
-        <h1>Exercises</h1>
-        <ul>
-            <li><a href="">p5.js sketch 1</a></li>
-            <li><a href="">p5.js sketch 2</a></li>
-            <li><a href="">p5.js sketch 3</a></li>
-        </ul>
-    </div>
+
+    <script>
+        dragElement(document.getElementById("mydiv"));
+
+        function dragElement(elmnt) {
+            var pos1 = 0,
+                pos2 = 0,
+                pos3 = 0,
+                pos4 = 0;
+            if (document.getElementById(elmnt.id + "header")) {
+                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+            } else {
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>
+
+
+
     
-    <!--add a h1 element called 'Thoughts' Below-->
-    <h1>Thoughts</h1>
-  
-    
-    <footer>
-      Spring, 2021.
-    </footer>
-</body>
-
-</html>
+</body></html>
