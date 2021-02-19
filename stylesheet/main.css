@@ -129,7 +129,7 @@ a:hover {
 
 .bg-main2 {
 
-    background-image: url("https://i.ibb.co/n1T5RjY/folder.png");
+    background-image: url("https://i.ibb.co/qmhw5LT/Screen-Shot-2021-02-18-at-5-25-07-PM.png");
     background-size: cover;
 }
 
@@ -152,9 +152,9 @@ a:hover {
 .topleft {
     margin: auto;
     position: fixed;
-    top: 23px;
+    top: 26px;
     z-index: 2;
-    margin-left: 0.9vh;
+    margin-left: 0.6vh;
 
 
 }
@@ -278,12 +278,12 @@ border-radius: 4px;
 
 .folder3 {
     margin: auto;
-    margin-right: 2vh;
+    margin-left: 60vh;
 
 }
 
 .folder3 img {
-    width: 220px;
+    width: 100px;
     padding: 40px;
 
 }
