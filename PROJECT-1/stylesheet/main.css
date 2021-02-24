@@ -14,7 +14,7 @@ audio {
 
 h1 {
     text-align: center;
-    font-family: Pilowlava-Regular;
+    font-family: "Pilowlava-Regular";
     font-size: 70px;
     width: 100%;
     position: fixed;
@@ -24,7 +24,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: Pilowlava-Regular;
+    font-family: "Pilowlava-Regular";
     font-size: 50px;
     width: 100%;
     position: fixed;
@@ -33,7 +33,7 @@ h2 {
 
 p {
     color: white;
-    font-family: Elianto;
+    font-family: "Elianto";
     font-size: 1.75rem;
     text-align: center;
     position: fixed;
@@ -60,17 +60,17 @@ a:hover {
 /*Fonts*/
 
 @font-face {
-    font-family: 'Pillowlava-Regular';
-    src: url("fonts/Pillowlava-Regular.woff2") format("woff2");
-    src: url("fonts/Pillowlava-Regular.woff") format("woff");
+    font-family: "Pillowlava-Regular";
+    src: url(fonts/Pillowlava-Regular.woff2) format("woff2");
+    src: url(fonts/Pillowlava-Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Elianto';
-    src: url('Elianto-Regular.woff2') format('woff2'),
-        url('Elianto-Regular.woff') format('woff');
+    font-family: "Elianto";
+    src: url(fonts/Elianto-Regular.woff2) format("woff2"),
+        url(fonts/Elianto-Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
