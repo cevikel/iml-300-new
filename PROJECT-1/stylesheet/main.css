@@ -57,11 +57,9 @@ a:hover {
 
 }
 /*Fonts*/
-
 @font-face {
     font-family: "Pillowlava-Regular";
-    src:
-        url(../fonts/Pilowlava-Regular.woff2) format("woff2"),
+    src: url(../fonts/Pilowlava-Regular.woff2) format("woff2"),
         url(../fonts/Pilowlava-Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
@@ -74,9 +72,6 @@ a:hover {
     font-weight: normal;
     font-style: normal;
 }
-
-
-
 /*colors*/
 
 
