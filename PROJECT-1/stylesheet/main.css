@@ -61,20 +61,21 @@ a:hover {
 
 @font-face {
     font-family: "Pillowlava-Regular";
-    src: url(fonts/Pillowlava-Regular.woff2) format("woff2");
-    src: url(fonts/Pillowlava-Regular.woff) format("woff");
+    src: 
+        url("../fonts/Pilowlava-Regular.woff2") format("woff2"),
+        url("../fonts/Pilowlava-Regular.woff") format("woff"),
+        url("../fonts/Pilowlava-Regular.woff2") format("eot");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Elianto";
-    src: url(fonts/Elianto-Regular.woff2) format("woff2"),
-        url(fonts/Elianto-Regular.woff) format("woff");
+    src: url(../fonts/Elianto-Regular.woff2) format("woff2"),
+        url(../fonts/Elianto-Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
-
 
 
 
