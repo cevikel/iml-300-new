@@ -258,6 +258,7 @@ a:hover {
 }
 
 .folder img {
+/*    position:fixed;*/
     width: 250px;
     padding: 40px;
 }
@@ -291,8 +292,8 @@ border-radius: 4px;
 }
 
 .folder3 img {
-    width: 100px;
-    padding: 40px;
+    width: 150px;
+    padding: 20px;
 
 }
 

@@ -2,33 +2,78 @@
 <html>
 
 <head>
-    <title>Reading 2</title>
+    <title>READING 2</title>
 
     <link rel="stylesheet" href="stylesheet/main.css">
 </head>
 
-
-<body>
-   
-    
-    <div>
-        
-        <h1> Reading 2 </h1><p>
-Egypt’s revolutionary fight against Mubarak’s regime, particularly in Tahrir square, became in itself  a revolution in the digital media sphere. Documented and shared by a plethora of Egyptians, online activism helped create communities during a time of political turmoil, allowing the construction of a massive, multi-dimensional archive; Vox Populi being a part of it. #Jan25 became the hashtag to gather activists and their physical and digital content - graffiti, street art, videography - resisting the regime and opening a portal for creatively suppressed Egyptians to self-express and experience freedom through media and art. The story of the revolution will always live through the media that captured it. 
-<br>
-Paul Soulellis in his Eyeo talk talks about the concept of “urgent craft,” which means delivering an urgent message quickly with the available means, whether it be protest, art, or anything in between. He also talks about “delayed urgency,” and the slow nature between future words, and in specific, queer futures. Soulellis mentions that queerness is kind of a constant and ongoing process of exploring identity in the past, present, and future, dealing with the rejections of the here and now. Slowness within delayed urgency is in alignment with the slowness in which power operates,  building and fortifying in time. An archive, much like the one Soulellis gathered of 200 different artists, makes it easier for the viewer to observe what's being lost and gained, to better understand digital archives, and to interrogate artifacts and media that is taken for granted in a defamiliarized context. Archives can freeze the moment, confronting us with urgent political messages.</p>
-   
-    <h1> Discussion Questions </h1>
-    
-    <p> 
+<style>
+    #mydiv {
+        position: absolute;
+        z-index: 3;
+        margin: auto;
+        box-shadow: 0 0 140px black;
+        left: 45vh;
+        top: 10vh;
+    }
+</style>
 
 
-1. What makes an archive a comprehensive, navigate-able well-structured one? <br>
-2.Can an archive exist without any borders and assume any form? <br>
-3.How can we deal with the flexibility that an archive offers to produce an effective message?
+<body class="bg-main">
 
-</p>
+
+
+    <div id="mydiv">
+
+
+        <img src="assets/N2.png" width="800px">
+
+
     </div>
 
 
+    <script>
+        dragElement(document.getElementById("mydiv"));
+
+        function dragElement(elmnt) {
+            var pos1 = 0,
+                pos2 = 0,
+                pos3 = 0,
+                pos4 = 0;
+            if (document.getElementById(elmnt.id + "header")) {
+                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+            } else {
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>
+
+
+
+    
 </body></html>
