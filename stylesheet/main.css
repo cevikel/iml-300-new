@@ -193,17 +193,6 @@ a:hover {
 }
 
 
-.middle2 {
-    margin: auto;
-    margin-top: 10vh;
-    ;
-
-    width: 30%;
-        border: solid 3px white;
-    z-index: 3;
-    left: 79vh;
-}
-
 .left {
     width: 500px;
     left: 100px;
